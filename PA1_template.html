@@ -258,11 +258,11 @@ head(activityNew)</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.</li>
 </ol>
-<pre class="r"><code>prueba&lt;-activityNew%&gt;%
+<pre class="r"><code>weekActivity&lt;-activityNew%&gt;%
         group_by(interval,day)%&gt;%
         summarise(stepsAverage=mean(steps))
 
-ggplot(prueba,aes(interval,stepsAverage))+
+ggplot(weekActivity,aes(interval,stepsAverage))+
         geom_line(color=&quot;darkslateblue&quot;)+
         facet_grid(day~.)+
         labs(title=&quot;Steps by weekday/weekend&quot;,y=&quot;No of steps&quot;)</code></pre>
