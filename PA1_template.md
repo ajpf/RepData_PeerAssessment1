@@ -29,7 +29,7 @@ Loading Data
             labs(title="Total number of steps per day",x="No of Steps",y="Frequency")+
             theme(panel.background = element_blank())
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-3-1.png)
+![Sample panel plot](instructions_fig/Rplot1.png)
 
 1.  Calculate and report the mean and median of the total number of
     steps taken per day
@@ -58,7 +58,7 @@ What is the average daily activity pattern?
             geom_line(linetype=1,color="brown",size=1)+
             labs(title="Average number of steps per interval",y="No of steps")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-5-1.png)
+![Sample panel plot](instructions_fig/Rplot2.png)
 
 1.  Which 5-minute interval, on average across all the days in the
     dataset, contains the maximum number of steps?
@@ -155,7 +155,7 @@ The following algorithm replaces the NA´s by steps average by interval:
             Steps",y="Frequency")+
             theme(panel.background = element_blank())
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-10-1.png)
+![Sample panel plot](instructions_fig/Rplot3.png)
 
     nmean<-mean(stepsDateNew$steps, na.rm = TRUE)
     nmedian<-median(stepsDateNew$steps, na.rm = TRUE)
