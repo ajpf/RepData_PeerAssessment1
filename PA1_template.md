@@ -204,4 +204,4 @@ Are there differences in activity patterns between weekdays and weekends?
             facet_grid(day~.)+
             labs(title="Steps by weekday/weekend",y="No of steps")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![Sample panel plot](instructions_fig/sample_panelplot.png)
